@@ -328,7 +328,7 @@ dd ul li {
 footer {
     background-color: #9C88FF;
     width: 100%;
-    padding: 10px 0; /* Mengurangi padding untuk menghindari tampilan 'gendut' */
+    padding: 10px 0;
 }
 
 .footerContainer {
