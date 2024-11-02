@@ -174,18 +174,14 @@ h2{
 }
 }
 
-/*List Penjelasan gacha*/
+/* List Penjelasan Gacha */
 dl {
     counter-reset: section;
-}
-
-
-dl {
     padding: 20px;
-    text-align: justify; 
-	font-size:20px; 
-	color: #003366; 
-	font-family: Arial,sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    color: #003366;
+    font-family: Arial, sans-serif;
 }
 
 dt {
@@ -204,20 +200,10 @@ dt::before {
     font-weight: bold;
 }
 
-ol {
-    padding-left: 0;
-    list-style-type: disc;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
 dd {
     margin-left: 20px;
     margin-bottom: 15px;
 }
-
 
 ul {
     list-style-type: disc;
