@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/CSS" href="UTS.css">
+	<script src="LatihanUTS.js" defer></script>
+	<link rel="icon" type="image/x-icon" href="./images/paimon.png" alt="paimon">
+	<title>HoyoFans Login</title>
+</head>
+<body bgcolor="#D3CBFF">
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">
+        <img src="./images/logo.png">
+        <span>HoyoFans</span>
+    </label>
+    <ul class="active">
+        <li><a href="http://localhost/tugas/UTS.html">Home</a></li>
+        <li><a href="http://localhost/tugas/UTSAbout.html">About</a></li>
+        <li><a href="http://localhost/tugas/UTSTeam.html">Team Guide</a></li>
+        <li>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Region <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="http://localhost/tugas/UTSMondo.html">Monstadt</a>
+          <a href="http://localhost/tugas/UTSLiyue.html">Liyue</a>
+          <a href="http://localhost/tugas/UTSInazuma.html">Inazuma</a>
+          <a href="http://localhost/tugas/UTSSumeru.html">Sumeru</a>
+        </div>
+      </div>
+        </li>
+        <li><a href="http://localhost/tugas/UTSLogin.html">Log In</a></li>
+    </ul>
+</nav>
+<br> <br>
+
+<div class="logincontainer">
+
+	<div class="main">
+<form action="/action_page.php">
+  <h2>Log in</h2>
+  <br>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn">Log in</button>
+</form>
+	</div>
+
+	<div class="sidebar">
+		<h2>Lanjutkan login dengan</h2>
+		<div class="lanjutkan">
+		<div class="social-media">
+              <a href="#" class="social-icon-regis">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon-regis">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon-regis">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon-regis">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+		<p>Buat akun Hoyoverse terlebih dahulu</p> <a href="https://account.hoyoverse.com/passport/index.html/login">Buat akunmu!</a>
+		</div>
+
+	</div>
+	
+</div>
+
+<script>
+            const lang = navigator.language;
+            let date = new Date();
+
+            let tanggal = date.getDate();
+            let month = date.getMonth();
+            let hari = date.toLocaleString(lang,{weekday: "long"});
+            let bulan = date.toLocaleString(lang,{month: "long"});
+            let tahun = date.getFullYear()
+
+            document.getElementById("bulan").innerHTML = bulan;
+            document.getElementById("hari").innerHTML = hari;
+            document.getElementById("tanggal").innerHTML = tanggal;
+            document.getElementById("tahun").innerHTML = tahun;
+</script>
+<br>
+
+<footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://web.facebook.com/GenshinImpact.id"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/genshinimpact/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/genshinimpact/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCiS882YPwZt1NfaM0gR0D9Q"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+        <div class="footer-nav">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact&hl=en-US">Google Play</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hoyofans by <span class="designer">Ramanda Tsany P 5A (11220251000043)</span></p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
