@@ -171,13 +171,13 @@ a.active,a:hover{
 	padding-bottom: 20px;
 }
 
-.video-container {
+.video-container-depan {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-.video-container video {
+.video-container-depan video {
     width: 100%;
     height: auto;
 	font-size:20px; 
@@ -185,6 +185,32 @@ a.active,a:hover{
 	font-family: Arial,sans-serif;
 }
 
+/*video konten*/
+center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+center video {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
 /*caption*/
 figcaption{
@@ -665,7 +691,7 @@ dd ul li {
     margin: 0 0.45rem;
     color: #1c1a1d;
     border-radius: 20%;
-    border: 2px solid #9C88FF;
+    border: 2px solid black;
     text-decoration: none;
     font-size: 1.1rem;
     transition: 0.3s;
